@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .container{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+
+    }
+    #output{
+        font-size: 50px;
+        margin-top: 100px;
+        border: 2px solid green;
+    border-radius: 20px;
+        width: 900px;
+        height: 150px;
+        text-align: center;
+ }
+button{
+    width: 200px;
+            height: 50px;
+            margin-top: 20px;
+            text-align: center;
+          background-color: rgb(242, 49, 49);
+          color: rgb(255, 205, 5);
+          box-shadow: 20px black;
+          border-radius: 20px ;
+font-size: 20px;
+
+}
+button:hover{
+    background-color: blue;
+    color: white;
+}
+button:active{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+h1,p{
+    text-align: center;
+    font-size: 30px;
+}
+a{
+    font-size: 30px;
+    
+}
+
+</style>
+<body>
+<a href="/index.html">HOME</a>
+    
+<h1>Randome Quote</h1>
+<p>IF you Want some Quote <br>
+Click the Generate button</p>
+    <div class="container">
+        <div id="output">
+       
+        </div>
+    <button onclick="quote()">Generate Quote</button>
+
+</div>
+<script>
+
+    function quote(){
+
+let randome = Math.floor(Math.random()*4)
+        let quote=["The only way to do great work is to love what you do." ,"Believe you can and you're halfway there."
+,"Life is 10% what happens to us and 90% how we react to it." , "Success is not final, failure is not fatal: it is the courage to continue that counts."]
+
+document.getElementById("output").innerHTML= quote[randome]
+
+
+
+
+
+
+    }
+</script>
+
+</body>
+</html>

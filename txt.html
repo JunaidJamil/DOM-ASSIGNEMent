@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    input{
+        width: 400px;
+        height: 30px;
+    }
+    button{
+    width: 200px;
+            height: 50px;
+            margin-top: 20px;
+            text-align: center;
+          background-color: rgb(242, 49, 49);
+          color: rgb(255, 205, 5);
+          box-shadow: 20px black;
+          border-radius: 20px ;
+font-size: 20px;
+
+}
+button:hover{
+    background-color: blue;
+    color: white;
+}
+button:active{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+
+    a{
+    font-size: 30px;
+    
+}
+</style>
+</head>
+
+<body>
+    <a href="/index.html">HOME</a>
+    <h3>Text which you have entered it will show on the popup box after click the button</h3>
+    <input type="text" name="" id="inp" placeholder="Enter Something">
+    <br>
+<button onclick="aler()">click me</button>
+
+<script>
+function aler(){
+let out= document.getElementById("inp").value;
+if(out != ""){
+alert("welcome  " + out);
+}
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.container{
+    display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+    #date{
+        font-size: 50px;
+        margin-top: 100px;
+        border: 2px solid green;
+    border-radius: 20px;
+        width: 900px;
+        height: 150px;
+        text-align: center;
+        background-color: antiquewhite;
+    }
+
+    button{
+            width: 200px;
+            height: 50px;
+            margin-left: 20px;
+            text-align: center;
+          background-color: rgb(242, 110, 49);
+          color: purple;
+          box-shadow: 20px black;
+          border-radius: 20px ;
+        }
+button:hover{
+    background-color: blue;
+    color: white;
+}
+button:active{
+    background-color: rosybrown;
+}
+h1,p{
+    text-align: center;
+}
+a{
+    font-size: 30px;
+    
+}
+@media (max-width:400px) {
+    .date{
+        max-width: 50px;
+    }
+
+}
+</style>
+<body>
+    <a href="/index.html">HOME</a>
+    <h1>Check Time</h1>
+    <p>IF you want to know date time and day <br>
+    please click the button you will get the answer</p>
+<div class="container">
+<button onclick="dat()">Click HERE</button>
+<div id="date">
+
+</div>
+</div>
+    <script>
+        function dat(){
+    setInterval(dat, 1000)
+   let today=new Date()
+
+    const now = new Intl.DateTimeFormat("en-us",{
+        dateStyle:"full",
+        timeStyle:"full"
+    }) 
+document.getElementById("date").innerHTML= now.format(today)
+    
+}
+
+    </script>
+</body>
+</html>

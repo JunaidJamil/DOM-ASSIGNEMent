@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bod{
+            border: 2px solid black;
+           width: 500px;
+           height: 500px;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            margin-left: 20px;
+            text-align: center;
+          background-color: rgb(72, 227, 72);
+          color: purple;
+          box-shadow: 20px black;
+        }
+.red:hover{
+     background-color:red ; 
+color: white;
+ }
+.blue:hover{
+    background-color: blue;
+    color: white;
+}
+
+        .but{
+            display: flex;
+            justify-content: center;
+        }
+        h1 ,p{
+            text-align: center;
+        }
+        a{
+    font-size: 30px;
+    
+}
+    </style>
+</head>
+<a href="/index.html">HOME</a>
+<body id="body">
+    <h1>Colour changing Button </h1>
+    <p>If you press red button it turns bakground into red colour <br>
+    if you press blue button it turn background into blue colour</p>
+    <div class="but">
+    <button onclick="red()" class="red">Red colour</button>
+    <button onclick="blue()" class="blue">Blue colour</button>
+    
+</div>
+    <script>
+     function red(){
+     document.getElementById("body").style.backgroundColor="red";
+    
+    }
+
+    function blue(){
+     document.getElementById("body").style.backgroundColor="blue";
+    
+    }
+</script>
+</body>
+</html>

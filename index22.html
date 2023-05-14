@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          button{
+            width: 200px;
+            height: 50px;
+            margin-left: 20px;
+            text-align: center;
+          background-color: rgb(242, 110, 49);
+          color: purple;
+          box-shadow: 20px black;
+          border-radius: 20px ;
+        }
+button:hover{
+    background-color: blue;
+    color: white;
+}
+button:active{
+    background-color: rosybrown;
+}
+        a{
+    font-size: 30px;
+    
+}
+.contain{
+    
+    flex-direction: row;
+    align-items: center;
+}
+    </style>
+</head>
+<a href="/index.html">HOME</a>
+<br>
+<div class="contain">
+<h3>CLick Button will show popup msg</h3>
+<br>
+<button onclick="aler()">Click me!</button>
+</div>
+<body>
+   <script>
+   function aler(){
+
+   alert("Hello!")
+    
+   }
+
+
+
+   </script> 
+</body>
+</html>
